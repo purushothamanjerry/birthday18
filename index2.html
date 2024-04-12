@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Special Birthday Surprise</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        color: #ffffff;
+        text-align: center;
+    }
+    #videoPlayer {
+        width: 100vw;
+        height: 100vh;
+    }
+</style>
+</head>
+<body>
+
+<h1>Happy Birthday!</h1>
+
+<video id="videoPlayer" controls autoplay>
+    <source src="./video/gift1.mp4" type="video/mp4"> <!-- Replace 'gift1.mp4' with your video URL -->
+    Your browser does not support the video tag.
+</video>
+
+<script>
+    var videoPlayer = document.getElementById('videoPlayer');
+    videoPlayer.addEventListener('loadedmetadata', function() {
+        videoPlayer.play();
+        videoPlayer.requestFullscreen();
+    });
+</script>
+
+</body>
+</html>
