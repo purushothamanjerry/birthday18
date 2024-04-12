@@ -19,6 +19,10 @@ body {
   text-align: center;
   visibility: hidden;
   width: 100vw;
+  background-image: url('https://getwallpapers.com/wallpaper/full/7/a/8/1357881-hd-love-wallpaper-1920x1080-1920x1080-for-ios.jpg');
+ background-repeat: no-repeat; /* This prevents the image from repeating */
+  background-size: cover;
+
 }
 
 .container > div {
@@ -213,6 +217,8 @@ body {
   font-size: 2rem;
   font-weight: lighter;
   margin: 10px 0 0;
+  background-color: red;
+
 }
 
 .nine p {
