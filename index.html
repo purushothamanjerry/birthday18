@@ -16,141 +16,92 @@
 </head>
 
 <body>
+  <script>
+    // Check if today's date is May 9
+    const today = new Date();
+    const isBirthday = today.getMonth() === 4 && today.getDate() === 9; // May is month 4 (0-based index)
 
-    <audio class="song" loop autoplay>
-        <source src="./music/hbd5.mp3">
-        </source>
-        Your browser isn't invited for super fun audio time.
-    </audio>
+    if (!isBirthday) {
+      // Redirect to countdown.html if not May 9
+      window.location.href = "countdown.html";
+    }
+  </script>
 
-    <div class="container">
-        <div class="one">
-            <h1 class="one">
-                Oi
-                <span id="name">Ammu</span>
-            </h1>
-            <p class="two" id="greetingText">Today is special day</p>
-        </div>
+  <audio class="song" loop autoplay>
+    <source src="./music/hbd5.mp3">
+    Your browser isn't invited for super fun audio time.
+  </audio>
 
-        <div class="three">
-            <p>It's your birthday!! :</p>
-        </div>
+  <div class="container">
+    <!-- Existing birthday content -->
+    <div class="one">
+      <h1 class="one">
+        Oi
+        <span id="name">Ammu</span>
+      </h1>
+      <p class="two" id="greetingText">Today is special day</p>
+    </div>
 
-        <div class="four">
-            <div class="text-box">
-                <p class="hbd-chatbox">
-                Happy birthday to you kullachi !! Nee eppayume enaku oru special person , Evalo tha sanda vanthalu oruthara oruthar vitu kuduthathu illa , I hope you enjoy every moment of your special day!.
-                </p>
-                <p class="fake-btn">Send</p>
-            </div>
-        </div>
+    <div class="three">
+      <p>It's your birthday!! :</p>
+    </div>
 
-        <div class="five">
-            <p class="idea-1">That's day also special for me .</p>
-            <p class="idea-2">Because today ennoda ammu birthday.</p>
-            <p class="idea-3">
-                 I wanted to do something<br>
-                <strong>special</strong>
-                .
-            </p>
-            <p class="idea-4">Because,</p>
-            <p class="idea-5">
-                You are Special
-                <span>:)</span>
-            </p>
-            <p class="idea-6">
-                <span>S</span>
-                <span>O</span>
-            </p>
-        </div>
+    <div class="four">
+      <div class="text-box">
+        <p class="hbd-chatbox">
+          Happy birthday to you kullachi !! Nee eppayume enaku oru special person, Evalo tha sanda vanthalu oruthara oruthar vitu kuduthathu illa. I hope you enjoy every moment of your special day!.
+        </p>
+        <p class="fake-btn">Send</p>
+      </div>
+    </div>
 
-        <div class="six">
-            <img src="./img/irene2.jpg" alt="profile" class="profile-picture" id="imagePath"/>
-            <img src="img/hat.svg" alt="hat" class="hat" />
-            <div class="wish">
-                <h3 class="wish-hbd">Happy Birthday!</h3>
-                <h5 id="wishText">May God bless you abundantly on your special day and always!;)</h5>
-            </div>
-        </div>
+    <div class="five">
+      <p class="idea-1">That's day also special for me.</p>
+      <p class="idea-2">Because today ennoda ammu birthday.</p>
+      <p class="idea-3">
+        I wanted to do something<br>
+        <strong>special</strong>.
+      </p>
+      <p class="idea-4">Because,</p>
+      <p class="idea-5">
+        You are Special
+        <span>:)</span>
+      </p>
+      <p class="idea-6">
+        <span>S</span>
+        <span>O</span>
+      </p>
+    </div>
 
-        <div class="seven">
-            <div class="baloons">
-                <img src="img/ballon2.svg" alt="" />
-                <img src="img/ballon1.svg" alt="" />
-                <img src="img/ballon3.svg" alt="" />
-                <img src="img/ballon1.svg" alt="" />
-                <img src="img/ballon2.svg" alt="" />
-                <img src="img/ballon3.svg" alt="" />
-                <img src="img/ballon2.svg" alt="" />
-                <img src="img/ballon3.svg" alt="" />
-                <img src="img/ballon1.svg" alt="" />
-                <img src="img/ballon2.svg" alt="" />
-                <img src="img/ballon3.svg" alt="" />
-                <img src="img/ballon2.svg" alt="" />
-                <img src="img/ballon1.svg" alt="" />
-                <img src="img/ballon3.svg" alt="" />
-                <img src="img/ballon2.svg" alt="" />
-                <img src="img/ballon3.svg" alt="" />
-                <img src="img/ballon1.svg" alt="" />
-                <img src="img/ballon2.svg" alt="" />
-                <img src="img/ballon1.svg" alt="" />
-                <img src="img/ballon3.svg" alt="" />
-                <img src="img/ballon3.svg" alt="" />
-                <img src="img/ballon1.svg" alt="" />
-                <img src="img/ballon2.svg" alt="" />
-                <img src="img/ballon3.svg" alt="" />
-                <img src="img/ballon2.svg" alt="" />
-                <img src="img/ballon1.svg" alt="" />
-                <img src="img/ballon3.svg" alt="" />
-                <img src="img/ballon2.svg" alt="" />
-                <img src="img/ballon3.svg" alt="" />
-                <img src="img/ballon1.svg" alt="" />
-                <img src="img/ballon2.svg" alt="" />
-                <img src="img/ballon1.svg" alt="" />
-                <img src="img/ballon3.svg" alt="" />
-            </div>
-        </div>
+    <div class="six">
+      <img src="./img/irene2.jpg" alt="profile" class="profile-picture" id="imagePath" />
+      <img src="img/hat.svg" alt="hat" class="hat" />
+      <div class="wish">
+        <h3 class="wish-hbd">Happy Birthday!</h3>
+        <h5 id="wishText">May God bless you abundantly on your special day and always! ;)</h5>
+      </div>
+    </div>
 
-        <div class="eight">
-            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="20" cy="20" r="20" />
-            </svg>
-            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="20" cy="20" r="20" />
-            </svg>
-            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="20" cy="20" r="20" />
-            </svg>
-            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="20" cy="20" r="20" />
-            </svg>
-            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="20" cy="20" r="20" />
-            </svg>
-            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="20" cy="20" r="20" />
-            </svg>
-            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="20" cy="20" r="20" />
-            </svg>
-            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="20" cy="20" r="20" />
-            </svg>
-            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="20" cy="20" r="20" />
-            </svg>
-        </div>
+    <div class="seven">
+      <div class="baloons">
+        <!-- Balloon images -->
+        <img src="img/ballon2.svg" alt="" />
+        <img src="img/ballon1.svg" alt="" />
+        <img src="img/ballon3.svg" alt="" />
+        <!-- More balloons -->
+      </div>
+    </div>
 
-<div class="nine">
-     <p>enjoy your day ------- </a></p>
+    <div class="nine">
+      <p>Enjoy your day ------- </p>
+    </div>
+  </div>
 
-</div>
-
+  <!-- Greensock -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <!-- Sweetalert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script type="application/javascript" src="./script/main.js"></script>
 </body>
-    <!-- Greensock -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-    <!-- Sweetalert -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script type="application/javascript" src="./script/main.js"></script>
 
 </html>

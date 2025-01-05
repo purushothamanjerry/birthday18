@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Countdown to May 9</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100vh;
+      background: linear-gradient(to bottom, #1e3c72, #2a5298);
+      background-size: cover;
+      color: #fff;
+    }
+
+    h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+      color: #ffdf91;
+      text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .countdown {
+      font-size: 2.5rem;
+      font-weight: 700;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 15px 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    .countdown span {
+      color: #ff9a9e;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .heart {
+      animation: pulse 1.5s infinite;
+      font-size: 4rem;
+      color: #ff477e;
+      margin-top: 30px;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 10px;
+      font-size: 1.2rem;
+      color: rgba(255, 255, 255, 0.7);
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <h1>Countdown to Your Special Day ✨</h1>
+    <div class="countdown" id="countdownTimer">
+      Loading...
+    </div>
+    <div class="heart">❤️</div>
+  </div>
+  <footer class="footer">
+    Cherishing every second until the big day!
+  </footer>
+
+  <script>
+    const targetDate = new Date(new Date().getFullYear(), 4, 9); // May 9 of current year
+    const timerElement = document.getElementById("countdownTimer");
+
+    function updateCountdown() {
+      const now = new Date();
+      const diff = targetDate - now;
+
+      if (diff <= 0) {
+        window.location.href = "birthday.html";
+      } else {
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+        timerElement.innerHTML = `
+          <span>${days}d</span> : 
+          <span>${hours}h</span> : 
+          <span>${minutes}m</span> : 
+          <span>${seconds}s</span>`;
+      }
+    }
+
+    setInterval(updateCountdown, 1000);
+  </script>
+</body>
+
+</html>
